@@ -2,16 +2,25 @@
 
 Set up cTrader Desktop in Bottles on a Plasma Wayland session, using Xwayland for the application windows.
 
+![cTrader Desktop running on Linux](ctrader-desktop-on-linux.png)
+
 ## Repository layout
 
 ```text
-presets/ctrader.yml                   Bottles configuration preset
-registry/ctrader-windowmetrics-fix.reg Window size correction
-registry/ctrader-wpf-software.reg      Optional graphics workaround
-src/notification-clickthrough.c       Notification overlay helper
-scripts/build-overlay-helper.sh      Helper build script
-scripts/overlay-helper.py             Helper installation and management
-build/                               Generated files, ignored by Git
+.
+├── README.md
+├── ctrader-desktop-on-linux.png
+├── presets/
+│   └── ctrader.yml
+├── registry/
+│   ├── ctrader-windowmetrics-fix.reg
+│   └── ctrader-wpf-software.reg
+├── scripts/
+│   ├── build-overlay-helper.sh
+│   └── overlay-helper.py
+├── src/
+│   └── notification-clickthrough.c
+└── build/
 ```
 
 ## Bottles setup
